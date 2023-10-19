@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head><title>Forms</title></head>
+<body>
+    <fieldset>
+    <form>
+        <h1>Welcome User...!! please fill out the given form...</h1>
+        <label>Name:</label>
+        <input type="text" required
+        placeholder="Enter your first Name
+        "
+        pattern="[a-zA-Z]{3,15}"
+        title="Check your name again...!!">
+
+<br><br>
+        <label>Age:</label>
+        <input type="number" min="18" max="29">
+        <p>Minimum age should be 18 and maximum age should be 29 </p>
+<br>
+        <label>Phone_Number:</label>
+        <input type="text"required placeholder="Enter 10 digit phone number"
+         pattern="[7-9]{1}[0-9]{9}$" title="Please enter the 10 digits of phone number">
+        <p>1.First digit of phone number can be anything between 7-9</p>
+        <p>2.Rest 9 digits of phone number can be anything between 0-9</p>
+<br>  
+        <label>Email:</label>
+        <input type="email" pattern="[a-zA-Z0-9]+@[a-zA-Z]+.[a-z]{2,3}" 
+        required placeholder="Enter Your email"> 
+ <br><br>
+        <label>Tech skills:</label> 
+        <input type="checkbox">Java 
+        <input type="checkbox">HTML5
+        <input type="checkbox">SQL
+        <input type="checkbox">Manual Testing
+        <input type="checkbox">CSS3    
+<br><br>
+        <label>Select City:</label>
+        <select>
+            <option>Bangalore</option>
+            <option>Hyderabad</option>
+            <option>Mumbai</option>
+            <option>Pune</option>
+            <option>Nagapur</option>
+        </select>        
+<br><br>
+        <label>Gender:</label>
+        <input type="radio" name="Gender">Male        
+        <input type="radio" name="Gender">Female 
+        <input type="radio" name="Gender">Other
+<br><br>
+        <label>Upload your files Here:</label>
+        <input type="file">
+<br><br>
+        <label>Calender:</label>
+        <input type="date" min="2012-03-16" max="2023-04-30">
+<br><br>
+        <label>Range Button:</label>
+        <input type="range">
+<br><br>
+        <label>Color pallet:</label>
+        <input type="color">
+<br><br>
+        <label>Search Button:</label>
+        <input type="search">
+<br><br>
+       <textarea>Write your comments here...!!</textarea>
+
+        <br><br>           
+        <input type="Submit">
+        <br><br>
+        <input type="Reset">
+     
+    </form>
+</fieldset>
+</body>
+
+</html>
